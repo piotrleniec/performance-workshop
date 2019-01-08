@@ -1,5 +1,6 @@
 class Tenant < ApplicationRecord
   belongs_to :room
+  has_many :payments
 
   validates :name, presence: true
   validates :gender, inclusion: { in: %w[m f] }
