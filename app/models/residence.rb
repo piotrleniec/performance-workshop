@@ -1,5 +1,6 @@
 class Residence < ApplicationRecord
   belongs_to :landlord
+  has_many :rooms
 
   validates :country, presence: true
   validates :state, presence: true
