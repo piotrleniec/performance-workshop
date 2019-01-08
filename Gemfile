@@ -64,3 +64,5 @@ gem 'pg'
 gem 'faker'
 
 gem 'timecop'
+
+gem 'bullet'
