@@ -71,3 +71,5 @@ gem 'rack-mini-profiler'
 gem 'memory_profiler'
 gem 'flamegraph'
 gem 'stackprof'
+
+gem 'get_process_mem'
