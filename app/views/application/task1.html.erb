@@ -1,0 +1,22 @@
+<% @landlords.each do |landlord| %>
+  <p>Landlord: <%= landlord.name %></p>
+
+  <ul>
+    <% landlord.residences.each do |residence| %>
+      <li>
+        Residence: <%= residence.country %>, <%= residence.state %>, <%= residence.city %>, <%= residence.address %>
+        Square meters: <%= residence.square_meters %>
+        Rooms:
+
+        <ul>
+          <% residence.rooms.each do |room| %>
+            <li>
+              Square meters: <%= room.square_meters %>
+              Furnished: <%= room.furnished? ? 'Yes' : 'No' %>
+            </li>
+          <% end %>
+        </ul>
+      </li>
+    <% end %>
+  </ul>
+<% end %>
